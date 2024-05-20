@@ -188,3 +188,60 @@
     /* height:auto; */
   }
 }
+/* breadcrumb */
+.breadcrumb {
+  display:flex;
+  list-style:none;
+  padding:8px 12px;
+  background:#f8f9fa;
+}
+.breadcrumb-item {
+  font-size:14px;
+}
+.breadcrumb-item a {
+  color:#007bff;
+  text-decoration:none;
+}
+.breadcrumb-item::after {
+  content: ">";
+  padding:0 8px;
+}
+.breadcrumb-item:last-child::after {
+  content:none;
+}
+.breadcrumb-item.active a {
+  color:#6c757d;
+}
+/* 2OKパターン */
+.breadcrumb-item2 {
+  font-size:14px;
+}
+.breadcrumb-item2 a {
+  color:#007bff;
+  text-decoration:none;
+}
+.breadcrumb-item2::after {
+  content: ">";
+  padding:0 8px;
+}
+.breadcrumb-item2:last-child::after {
+  content:none;
+}
+.breadcrumb-item2.active a {
+  color:#6c757d;
+}
+/* ３点リーダーを使用する */
+.breadcrumb-item2.active {
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  max-width: 130px;
+
+}
+@media (max-width: 600px) {
+  .breadcrumb-item2.active {
+    max-width: 50px; /* モバイル用の幅 */
+  }
+}

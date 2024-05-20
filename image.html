@@ -11,7 +11,7 @@
         
        
         <main>
-            
+            <h1>画像ボックス</h1>
             <div class="boxes inner">
                 <!-- 画像１ -->
                 <a href="#" class="box">
@@ -27,8 +27,9 @@
                 <a href="#" class="box">
                     <img src="./img/img04.jpg" alt="Image 2">
                 </a>
+                <h2>画像ボックスA</h2>
                 <!-- 画像４ -->
-                <a href="#" class="box">
+                <a href="#" class="box" id="box-a">
                     <img src="./img/img02.jpg" alt="Image 2">
                 </a>
                
@@ -42,26 +43,24 @@
                     <img src="./img/img04.jpg" alt="Image 2">
                 </a>
              
-                
+                <h2>画像ボックスB</h2>
                 <!-- 画像５ -->
-                <a href="#" class="box">
+                <a href="#" class="box" id="box-b">
                     <img src="./img/img05.jpg" alt="Image 2">
                 </a>
                 <!-- 画像６ -->
                 <a href="#" class="box">
                     <img src="./img/img06.jpg" alt="Image 2">
                 </a>
-                
+                <h2>画像ボックスC</h2>
                 <!-- 画像５ -->
-                <a href="#" class="box">
+                <a href="#" class="box" id="box-c">
                     <img src="./img/img07.jpg" alt="Image 2">
                 </a>
                 <!-- 画像６ -->
                 <a href="#" class="box">
                     <img src="./img/img09.png" alt="Image 2">
                 </a>
-                
-                
             </div>
 
             
@@ -121,6 +120,26 @@
                     <img src="./img/img03.jpg" alt="" srcset="" width="50%">
                 </picture>
 
+            </section>
+
+            <section>
+                <h1>パンくずリスト長すぎるテキストの処理</h1>
+                <p>テキスト処理しない場合のモバイル表示の破綻</p>
+                <nav aria-label="Breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#box-a">ホーム</a></li>
+                        <li class="breadcrumb-item"><a href="#box-c">カテゴリ</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">詳細ページのタイトル請求ページへ</li>
+                    </ol>
+                </nav>
+                <p>モバイルに対応したテキストを<span style="color:crimson;">3点リーダーで</span>処理した場合</p>
+                <nav aria-label="Breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item2"><a href="#box-a">ホーム</a></li>
+                        <li class="breadcrumb-item2"><a href="#box-c">カテゴリ</a></li>
+                        <li class="breadcrumb-item2 active" aria-current="page">詳細ページのタイトル請求ページへ</li>
+                    </ol>
+                </nav>
             </section>
         </main>
         
