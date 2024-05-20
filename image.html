@@ -113,6 +113,14 @@
             <section>
                 <h1>pcとspの画像のだしわけにpictureを使用する</h1>
                 <p>display:none;を使用すると切り替え時に不要な画像まで読み込まれてしまう挙動ありなので避ける</p>
+                <p>1000px以上ではimg06の黒色単体ボトルが表示され、それ以外ではimg05赤ピンク白の３個ボトルが表示される。どちらもエラー表示の場合用意しておく画像ではimg03海の景色が表示される</p>
+                <picture>
+                    <source srcset="./img/img06.jpg" media="(min-width:1000px)" width="50%">
+                    <!-- <source srcset="./img/img05.jpg" media="(max-width:999px)" width="50%"> -->
+                    <source srcset="./img/img05.jpg" media="not all and (min-width:1000px)" width="50%">
+                    <img src="./img/img03.jpg" alt="" srcset="" width="50%">
+                </picture>
+
             </section>
         </main>
         
